@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOAL - Betting Game</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script type="module" defer src="dist/script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="container">
+        <div class="game-header">
+          <div class="header-left-div">
+            <img
+              src="https://turbo-next.spribegaming.com/icon-goal_white.f9e57d9b791fcc1fc966.svg"
+              alt="football"
+            />
+            <span class="goal-span">GOAL</span>
+            <button class="tundra">
+              <img
+                src="https://goal-game.netlify.app/assets/shield-check.svg"
+                alt="shield-check"
+              />
+              <span>Provably Fair</span>
+            </button>
+          </div>
+          <div class="header-mid-div balance-display">
+            Credit: <span class="credit-score"></span>
+            <span class="dollar-sign">$</span>
+          </div>
+          <div class="header-right-div">
+            <button class="modal2">How to play?</button>
+            <button id="toggleMenuButton">
+              <img
+                src="https://goal-game.netlify.app/assets/list.svg"
+                alt="hamburger-menu"
+              />
+            </button>
+
+            <div class="hidden-div" id="menuDiv">
+              <div class="insideHiddenDiv">
+                <div class="hiddenContents">
+                  <div class="volume" id="soundToggle">
+                    <div>
+                      <img
+                        src="https://turbo-next.spribegaming.com/volume.a53510ebf57ef9b14ed6.svg"
+                        alt="volume"
+                      />
+                      <span>Volume</span>
+                    </div>
+
+                    <label class="switcher">
+                      <input type="checkbox" id="soundCheckbox" checked />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="fairDiv">
+                    <img
+                      src="https://turbo-next.spribegaming.com/provably-fair.5d422b1e6f1de920aa59.svg"
+                      alt="scales"
+                    />
+                    <button
+                      id="provablyFairButton"
+                      class="sidebar-item provablyFairModal"
+                    >
+                      Provably Fair
+                    </button>
+                  </div>
+                  <div class="freeBets">
+                    <img
+                      src="https://turbo-next.spribegaming.com/free-bets.5f5e04d1306ecce6540e.svg"
+                      alt="star"
+                    />
+                    <span>Free Bets</span>
+                  </div>
+                  <div>
+                    <img
+                      src="https://turbo-next.spribegaming.com/help.e91db403bcb7dbaf6920.svg"
+                      alt="question"
+                    />
+                    <button id="howToPlayButton" class="sidebar-item">
+                      How To Play
+                    </button>
+                  </div>
+                </div>
+                <div class="banner">
+                  <div>
+                    <img
+                      src="https://turbo-next.spribegaming.com/icon-goal_white.f9e57d9b791fcc1fc966.svg"
+                    />
+                    <span>GOAL</span>
+                  </div>
+                  <p>
+                    <a href="https://spribe.co/welcome" target="blank"
+                      >© Spribe</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="gameComponentsContainer">
+          <div id="menu">
+            <section class="betting-controls">
+              <div id="game-type">
+                <div class="box" id="auto-manual">
+                  <div class="activeAuto gameSwitch">Manual</div>
+                  <div class="gameSwitch">Auto</div>
+                </div>
+              </div>
+              <div id="bet-container">
+                <div id="bet-input">
+                  <p>Bet Amount $</p>
+                  <div id="input-container">
+                    <div>-</div>
+                    <input type="text" id="bet-input-text" />
+                    <div>+</div>
+                  </div>
+                </div>
+                <div id="bet-options">
+                  <div>1$</div>
+                  <div>3$</div>
+                  <div>5$</div>
+                  <div>10$</div>
+                </div>
+              </div>
+              <div id="field-size">
+                <p id="field-title">Field Size</p>
+                <div id="sizes">
+                  <div>Small</div>
+                  <div class="active">Medium</div>
+                  <div>Big</div>
+                </div>
+              </div>
+              <div class="auto visible vision">
+                <div class="field" id="onWin">
+                  <p class="fieldTitle">On Win</p>
+                  <div class="fieldButtons onWin">
+                    <button class="active onWinBase">Return to base</button>
+                    <button class="onWinIncreaseContainer">
+                      Increase
+                      <div class="percent">
+                        <input
+                          type="text"
+                          class="innerPercent onWinIncrease"
+                          value="100"
+                          maxlength="3"
+                          id="innerPercent1"
+                        />
+                        <div class="percentLogo">%</div>
+                      </div>
+                    </button>
+                    <button class="onWinDecreaseContainer">
+                      Decrease
+                      <div class="percent">
+                        <input
+                          type="text"
+                          class="innerPercent onWinDecrease"
+                          value="50"
+                          maxlength="3"
+                          id="innerPercent2"
+                        />
+                        <div class="percentLogo">%</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="field" id="onLoss">
+                  <p class="fieldTitle">On Loss</p>
+                  <div class="fieldButtons onLoss">
+                    <button class="active onLossBase">Return to base</button>
+                    <button class="onLossIncreaseContainer">
+                      Increase
+                      <div class="percent">
+                        <input
+                          type="text"
+                          class="innerPercent onLossIncrease"
+                          value="100"
+                          maxlength="3"
+                          id="innerPercent3"
+                        />
+                        <p class="percentLogo">%</p>
+                      </div>
+                    </button>
+                    <button class="onLossDecreaseContainer">
+                      Decrease
+                      <div class="percent">
+                        <input
+                          type="text"
+                          class="innerPercent onLossDecrease"
+                          value="50"
+                          maxlength="3"
+                          id="innerPercent4"
+                        />
+                        <p class="percentLogo">%</p>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="buttonsArea">
+                  <button id="randomSelect" class="randomSelectButton">
+                    select randomly
+                  </button>
+                </div>
+              </div>
+              <button id="bet-button">BET</button>
+            </section>
+          </div>
+          <div id="game">
+            <div class="game-field" data-board="">
+              <!-- The game board will be dynamically generated here -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="multipliers"></footer>
+    </div>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="modalContent">
+          <div class="modalNav">
+            <p>FAIR</p>
+          </div>
+          <img
+            class="tablePhoto"
+            src="https://turbo-next.spribegaming.com/hint-goal.a84a2446dfda37f18733.svg"
+            alt="Fair Play Table"
+          />
+          <p>
+            This game uses Provably Fair technology to determine game result.
+            This tool gives you the ability to change your seed and check
+            fairness of the game
+          </p>
+          <button class="guideModalButton" id="gotItButton">GOT IT</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay" id="howToPlayModalOverlay">
+      <div class="modal" id="howToPlayModal">
+        <div class="modalContent">
+          <div class="modalNav">
+            <p>HOW TO PLAY</p>
+          </div>
+          <img
+            class="tablePhoto"
+            src="https://turbo-next.spribegaming.com/hint-goal.a84a2446dfda37f18733.svg"
+            alt="How To Play Table"
+          />
+          <p>
+            There is one bomb in each row of the field. For each successful step
+            your winnings increase. You can cash them out anytime.
+          </p>
+          <div class="betInfo">
+            <div>Min. bet: <span>0.1$</span></div>
+            <div>Max. bet: <span>100$</span></div>
+          </div>
+          <button class="guideModalButton" id="closeHowToPlay">GOT IT</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

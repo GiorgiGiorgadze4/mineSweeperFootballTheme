@@ -1,0 +1,29 @@
+
+<svg width="43px" height="42px" viewBox="0 0 43 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <filter x="-19.4%" y="-13.9%" width="138.9%" height="138.9%" filterUnits="objectBoundingBox" id="filter-1">
+      <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+      <feColorMatrix values="0 0 0 0 0.816203773   0 0 0 0 0.00751322834   0 0 0 0 0.106696017  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+    <linearGradient x1="73.700407%" y1="0%" x2="34.8772982%" y2="100%" id="linearGradient-2">
+      <stop stop-color="#FAD961" offset="0%"></stop>
+      <stop stop-color="#F76B1C" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Goal-mobile-04" transform="translate(-87.000000, -226.000000)" fill-rule="nonzero">
+      <g id="flaticon1518120134-svg" filter="url(#filter-1)" transform="translate(91.000000, 227.000000)">
+        <polygon id="Shape" fill="#D0021B" points="36 17.1953438 26.0907891 14.5591875 31.1165156 5.72378906 21.8096016 9.9939375 19.908 0.03571875 15.5582578 9.21417188 7.61913281 2.79260156 10.2618281 12.5846719 0 12.7045547 8.39854687 18.5283281 0.61565625 25.1335547 10.8402891 24.2640703 9.17796094 34.2640547 16.4445469 27.1081406 21.6806484 35.8236563 22.5890156 25.7296641 32.2735078 29.0827266 26.3985469 20.7736875"></polygon>
+        <polygon id="Shape" fill="url(#linearGradient-2)" points="29.6128828 17.4559219 23.2198594 15.7551328 26.46225 10.0548984 20.4578438 12.8098828 19.2309609 6.38514844 16.4246484 12.3067266 11.3026641 8.16384375 13.0076016 14.4812813 6.38711719 14.558625 11.8055391 18.3159141 6.7843125 22.5773438 13.3808203 22.0163906 12.3083437 28.4679844 16.9965 23.8512656 20.3745937 29.4742266 20.9606484 22.9619531 27.2086875 25.1251875 23.4184219 19.7645625"></polygon>
+        <polygon id="Shape" fill="#FFF082" points="20.8306406 17.8142344 19.2723047 17.3996719 20.0626875 16.0102266 18.5990625 16.6817109 18.3000234 15.1157109 17.6160234 16.5590859 16.3675547 15.5492578 16.7831016 17.0891719 15.1693594 17.1080156 16.4901094 18.0238359 15.2661797 19.0625625 16.8740859 18.9258047 16.6126641 20.4984141 17.7553828 19.3730625 18.5788125 20.7436641 18.7216875 19.1562891 20.2445859 19.6835625 19.32075 18.3769453"></polygon>
+      </g>
+    </g>
+  </g>
+</svg>
